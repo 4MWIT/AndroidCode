@@ -2,7 +2,7 @@
 
 > **Status: alpha (0.1)** — early public release, APIs and behavior may change. Open source, MIT licensed.
 
-On-device Android IDE with an embedded coding agent — edit folders directly on shared storage, chat with the agent, and optionally build/install/launch APKs without leaving the phone. Formerly `Ai_code / AIcode`.
+On-device AI coding agent for Android — edit project folders directly on shared storage, chat with the AI agent, and optionally build/install/launch APKs directly on your phone. Formerly `Ai_code / AIcode`.
 
 **Version: 0.1** · **License: MIT** · **Status: alpha**
 
