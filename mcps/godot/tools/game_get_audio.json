@@ -1,0 +1,9 @@
+{
+  "name": "game_get_audio",
+  "description": "Get audio bus layout and playing streams",
+  "inputSchema": {
+    "type": "object",
+    "properties": {},
+    "required": []
+  }
+}

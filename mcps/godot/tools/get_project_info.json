@@ -1,0 +1,16 @@
+{
+  "name": "get_project_info",
+  "description": "Retrieve metadata about a Godot project",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Godot project path"
+      }
+    },
+    "required": [
+      "projectPath"
+    ]
+  }
+}

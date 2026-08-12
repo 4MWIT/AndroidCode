@@ -1,0 +1,25 @@
+{
+  "name": "manage_translations",
+  "description": "List/add/remove translation files in project",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Godot project path"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: list, add, remove"
+      },
+      "translationPath": {
+        "type": "string",
+        "description": "Translation file path"
+      }
+    },
+    "required": [
+      "projectPath",
+      "action"
+    ]
+  }
+}

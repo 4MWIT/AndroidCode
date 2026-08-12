@@ -1,0 +1,38 @@
+{
+  "name": "game_render_settings",
+  "description": "Get/set MSAA, FXAA, TAA, scaling mode/scale",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "action": {
+        "type": "string",
+        "description": "Action: get or set"
+      },
+      "msaa2d": {
+        "type": "number",
+        "description": "MSAA 2D mode (0-3)"
+      },
+      "msaa3d": {
+        "type": "number",
+        "description": "MSAA 3D mode (0-3)"
+      },
+      "fxaa": {
+        "type": "boolean",
+        "description": "Enable FXAA"
+      },
+      "taa": {
+        "type": "boolean",
+        "description": "Enable TAA"
+      },
+      "scalingMode": {
+        "type": "number",
+        "description": "Scaling mode (0=bilinear, 1=FSR1, 2=FSR2)"
+      },
+      "scalingScale": {
+        "type": "number",
+        "description": "Render scale (0.0-1.0)"
+      }
+    },
+    "required": []
+  }
+}

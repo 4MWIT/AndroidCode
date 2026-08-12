@@ -1,0 +1,26 @@
+{
+  "name": "game_set_camera",
+  "description": "Move or rotate the active camera",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "position": {
+        "type": "object",
+        "description": "{x,y} or {x,y,z} for camera position"
+      },
+      "rotation": {
+        "type": "object",
+        "description": "{x,y,z} rotation in degrees"
+      },
+      "zoom": {
+        "type": "object",
+        "description": "{x,y} zoom for Camera2D"
+      },
+      "fov": {
+        "type": "number",
+        "description": "Field of view for Camera3D"
+      }
+    },
+    "required": []
+  }
+}

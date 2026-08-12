@@ -1,0 +1,39 @@
+{
+  "name": "manage_scene_structure",
+  "description": "Rename/duplicate/move nodes within .tscn scenes",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Godot project path"
+      },
+      "scenePath": {
+        "type": "string",
+        "description": "Scene file path (relative to project)"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: rename, duplicate, move"
+      },
+      "nodePath": {
+        "type": "string",
+        "description": "Source node path in scene"
+      },
+      "newName": {
+        "type": "string",
+        "description": "New name (for rename)"
+      },
+      "newParentPath": {
+        "type": "string",
+        "description": "New parent path (for move)"
+      }
+    },
+    "required": [
+      "projectPath",
+      "scenePath",
+      "action",
+      "nodePath"
+    ]
+  }
+}

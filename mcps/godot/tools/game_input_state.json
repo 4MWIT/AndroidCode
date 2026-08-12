@@ -1,0 +1,26 @@
+{
+  "name": "game_input_state",
+  "description": "Query pressed keys, mouse position, connected pads",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "action": {
+        "type": "string",
+        "description": "Action: query, warp_mouse, set_mouse_mode"
+      },
+      "x": {
+        "type": "number",
+        "description": "Mouse X (for warp_mouse)"
+      },
+      "y": {
+        "type": "number",
+        "description": "Mouse Y (for warp_mouse)"
+      },
+      "mouseMode": {
+        "type": "string",
+        "description": "Mode: visible, hidden, captured, confined"
+      }
+    },
+    "required": []
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "manage_export_presets",
+  "description": "Create or modify export preset configuration",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Godot project path"
+      },
+      "action": {
+        "type": "string",
+        "description": "\"list\", \"add\", or \"remove\""
+      },
+      "name": {
+        "type": "string",
+        "description": "Preset name (required for add/remove)"
+      },
+      "platform": {
+        "type": "string",
+        "description": "Platform (for add, e.g. \"Windows Desktop\", \"Linux\", \"Web\")"
+      },
+      "runnable": {
+        "type": "boolean",
+        "description": "Whether this preset is runnable. Default: false"
+      }
+    },
+    "required": [
+      "projectPath",
+      "action"
+    ]
+  }
+}

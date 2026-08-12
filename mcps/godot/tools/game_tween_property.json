@@ -1,0 +1,37 @@
+{
+  "name": "game_tween_property",
+  "description": "Tween a node property in the running game",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to the node"
+      },
+      "property": {
+        "type": "string",
+        "description": "Property to tween (e.g., \"position\", \"modulate\")"
+      },
+      "finalValue": {
+        "description": "Target value. Use {x,y} for Vector2, {x,y,z} for Vector3, {r,g,b,a} for Color"
+      },
+      "duration": {
+        "type": "number",
+        "description": "Duration in seconds. Default: 1.0"
+      },
+      "transType": {
+        "type": "number",
+        "description": "Tween.TransitionType enum value. Default: 0 (LINEAR)"
+      },
+      "easeType": {
+        "type": "number",
+        "description": "Tween.EaseType enum value. Default: 2 (IN_OUT)"
+      }
+    },
+    "required": [
+      "nodePath",
+      "property",
+      "finalValue"
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "export_project",
+  "description": "Export a Godot project using a preset",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Godot project path"
+      },
+      "presetName": {
+        "type": "string",
+        "description": "Export preset name"
+      },
+      "outputPath": {
+        "type": "string",
+        "description": "Output file path for the exported build"
+      },
+      "debug": {
+        "type": "boolean",
+        "description": "Use debug export. Default: false"
+      }
+    },
+    "required": [
+      "projectPath",
+      "presetName",
+      "outputPath"
+    ]
+  }
+}

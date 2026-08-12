@@ -1,0 +1,25 @@
+{
+  "name": "game_await_signal",
+  "description": "Await a signal with timeout and return args",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to the node"
+      },
+      "signalName": {
+        "type": "string",
+        "description": "Signal name to await"
+      },
+      "timeout": {
+        "type": "number",
+        "description": "Timeout in seconds. Default: 10"
+      }
+    },
+    "required": [
+      "nodePath",
+      "signalName"
+    ]
+  }
+}

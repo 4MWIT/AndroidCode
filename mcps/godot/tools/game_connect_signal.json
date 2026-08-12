@@ -1,0 +1,31 @@
+{
+  "name": "game_connect_signal",
+  "description": "Connect a signal from one node to a method on another node in the running game",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to the source node that emits the signal"
+      },
+      "signalName": {
+        "type": "string",
+        "description": "Name of the signal to connect"
+      },
+      "targetPath": {
+        "type": "string",
+        "description": "Path to the target node that receives the signal"
+      },
+      "method": {
+        "type": "string",
+        "description": "Method name to call on the target node"
+      }
+    },
+    "required": [
+      "nodePath",
+      "signalName",
+      "targetPath",
+      "method"
+    ]
+  }
+}

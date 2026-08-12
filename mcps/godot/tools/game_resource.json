@@ -1,0 +1,29 @@
+{
+  "name": "game_resource",
+  "description": "Runtime resource load, save, or preload",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "action": {
+        "type": "string",
+        "description": "Action: load, save, exists"
+      },
+      "path": {
+        "type": "string",
+        "description": "Resource path (res://)"
+      },
+      "nodePath": {
+        "type": "string",
+        "description": "Node path (for save - saves node resource)"
+      },
+      "property": {
+        "type": "string",
+        "description": "Property name holding the resource"
+      }
+    },
+    "required": [
+      "action",
+      "path"
+    ]
+  }
+}

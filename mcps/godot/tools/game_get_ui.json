@@ -1,0 +1,9 @@
+{
+  "name": "game_get_ui",
+  "description": "Get visible UI elements from the running game",
+  "inputSchema": {
+    "type": "object",
+    "properties": {},
+    "required": []
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "create_resource",
+  "description": "Create a .tres resource file (headless)",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Godot project path"
+      },
+      "resourceType": {
+        "type": "string",
+        "description": "Godot class name (e.g., \"StandardMaterial3D\", \"Theme\", \"Environment\")"
+      },
+      "resourcePath": {
+        "type": "string",
+        "description": "Where to save the .tres file (relative to project)"
+      },
+      "properties": {
+        "type": "object",
+        "description": "Optional properties to set on the resource"
+      }
+    },
+    "required": [
+      "projectPath",
+      "resourceType",
+      "resourcePath"
+    ]
+  }
+}

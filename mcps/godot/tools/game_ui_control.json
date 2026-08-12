@@ -1,0 +1,37 @@
+{
+  "name": "game_ui_control",
+  "description": "Set focus, anchors, tooltip, mouse filter on Control",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to Control node"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: configure, grab_focus, release_focus, get_info"
+      },
+      "anchorPreset": {
+        "type": "number",
+        "description": "Anchor preset value"
+      },
+      "tooltip": {
+        "type": "string",
+        "description": "Tooltip text"
+      },
+      "mouseFilter": {
+        "type": "string",
+        "description": "Mouse filter: stop, pass, ignore"
+      },
+      "minSize": {
+        "type": "object",
+        "description": "Minimum size {x,y}"
+      }
+    },
+    "required": [
+      "nodePath",
+      "action"
+    ]
+  }
+}

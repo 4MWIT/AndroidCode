@@ -1,0 +1,25 @@
+{
+  "name": "game_raycast",
+  "description": "Cast a ray and return collision results",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "from": {
+        "type": "object",
+        "description": "Start point {x,y} or {x,y,z}"
+      },
+      "to": {
+        "type": "object",
+        "description": "End point {x,y} or {x,y,z}"
+      },
+      "collisionMask": {
+        "type": "number",
+        "description": "Collision mask. Default: 0xFFFFFFFF"
+      }
+    },
+    "required": [
+      "from",
+      "to"
+    ]
+  }
+}

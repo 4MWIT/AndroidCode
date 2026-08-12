@@ -1,0 +1,21 @@
+{
+  "name": "game_process_mode",
+  "description": "Set node process mode (pausable/always/disabled)",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to the node"
+      },
+      "mode": {
+        "type": "string",
+        "description": "Mode: inherit, pausable, when_paused, always, disabled"
+      }
+    },
+    "required": [
+      "nodePath",
+      "mode"
+    ]
+  }
+}

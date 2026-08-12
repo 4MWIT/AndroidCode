@@ -1,0 +1,21 @@
+{
+  "name": "create_project",
+  "description": "Create a new Godot project from scratch",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Directory where the project will be created"
+      },
+      "projectName": {
+        "type": "string",
+        "description": "Name of the project"
+      }
+    },
+    "required": [
+      "projectPath",
+      "projectName"
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "list_project_files",
+  "description": "List project files, optionally filtered by extension",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Godot project path"
+      },
+      "extensions": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "Optional file extensions to filter by (e.g., [\".gd\", \".tscn\"]). Include the dot."
+      },
+      "subdirectory": {
+        "type": "string",
+        "description": "Optional subdirectory to search in (e.g., \"scripts/player\")"
+      }
+    },
+    "required": [
+      "projectPath"
+    ]
+  }
+}

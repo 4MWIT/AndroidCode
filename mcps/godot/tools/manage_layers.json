@@ -1,0 +1,33 @@
+{
+  "name": "manage_layers",
+  "description": "List/set named layer definitions in project",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Godot project path"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: list or set"
+      },
+      "layerType": {
+        "type": "string",
+        "description": "Type: render, physics_2d, physics_3d, navigation"
+      },
+      "layer": {
+        "type": "number",
+        "description": "Layer number (1-32)"
+      },
+      "name": {
+        "type": "string",
+        "description": "Layer name"
+      }
+    },
+    "required": [
+      "projectPath",
+      "action"
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "game_screenshot",
+  "description": "Screenshot the running game (returns base64 PNG)",
+  "inputSchema": {
+    "type": "object",
+    "properties": {},
+    "required": []
+  }
+}

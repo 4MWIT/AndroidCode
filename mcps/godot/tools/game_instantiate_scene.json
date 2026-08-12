@@ -1,0 +1,20 @@
+{
+  "name": "game_instantiate_scene",
+  "description": "Load a PackedScene and add it as a child of a node in the running game",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "scenePath": {
+        "type": "string",
+        "description": "Resource path to the scene (e.g., \"res://scenes/enemy.tscn\")"
+      },
+      "parentPath": {
+        "type": "string",
+        "description": "Path to the parent node. Default: \"/root\""
+      }
+    },
+    "required": [
+      "scenePath"
+    ]
+  }
+}

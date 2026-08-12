@@ -1,0 +1,36 @@
+{
+  "name": "game_sky",
+  "description": "Create/configure Sky with procedural/physical sky",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "action": {
+        "type": "string",
+        "description": "Action: create or configure"
+      },
+      "skyType": {
+        "type": "string",
+        "description": "Type: procedural or physical"
+      },
+      "topColor": {
+        "type": "object",
+        "description": "Sky top color {r,g,b}"
+      },
+      "bottomColor": {
+        "type": "object",
+        "description": "Horizon bottom color {r,g,b}"
+      },
+      "sunEnergy": {
+        "type": "number",
+        "description": "Sun energy/brightness"
+      },
+      "groundColor": {
+        "type": "object",
+        "description": "Ground color {r,g,b}"
+      }
+    },
+    "required": [
+      "action"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "game_eval",
+  "description": "Execute GDScript in the running game. Use \"return\" for values.",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "code": {
+        "type": "string",
+        "description": "GDScript code to execute. Use \"return\" to return values."
+      }
+    },
+    "required": [
+      "code"
+    ]
+  }
+}

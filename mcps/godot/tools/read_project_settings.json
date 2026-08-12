@@ -1,0 +1,16 @@
+{
+  "name": "read_project_settings",
+  "description": "Read project.godot as structured JSON",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Godot project path"
+      }
+    },
+    "required": [
+      "projectPath"
+    ]
+  }
+}

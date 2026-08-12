@@ -1,0 +1,28 @@
+{
+  "name": "game_multiplayer",
+  "description": "ENet multiplayer create server/client/disconnect",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "action": {
+        "type": "string",
+        "description": "Action: create_server, create_client, disconnect, status"
+      },
+      "port": {
+        "type": "number",
+        "description": "Server port. Default: 7000"
+      },
+      "address": {
+        "type": "string",
+        "description": "Server address for client. Default: 127.0.0.1"
+      },
+      "maxClients": {
+        "type": "number",
+        "description": "Max clients for server. Default: 32"
+      }
+    },
+    "required": [
+      "action"
+    ]
+  }
+}

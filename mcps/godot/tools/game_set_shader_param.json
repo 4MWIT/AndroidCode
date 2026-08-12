@@ -1,0 +1,29 @@
+{
+  "name": "game_set_shader_param",
+  "description": "Set a shader parameter on a node's material",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to the node with a ShaderMaterial"
+      },
+      "paramName": {
+        "type": "string",
+        "description": "Shader parameter name"
+      },
+      "value": {
+        "description": "Value to set (number, object, array, etc.)"
+      },
+      "typeHint": {
+        "type": "string",
+        "description": "Optional type hint (e.g. \"Color\", \"Vector2\")"
+      }
+    },
+    "required": [
+      "nodePath",
+      "paramName",
+      "value"
+    ]
+  }
+}

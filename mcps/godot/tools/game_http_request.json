@@ -1,0 +1,32 @@
+{
+  "name": "game_http_request",
+  "description": "HTTP GET/POST/PUT/DELETE with headers and body",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "url": {
+        "type": "string",
+        "description": "Request URL"
+      },
+      "method": {
+        "type": "string",
+        "description": "HTTP method: GET, POST, PUT, DELETE. Default: GET"
+      },
+      "headers": {
+        "type": "object",
+        "description": "Request headers as key-value pairs"
+      },
+      "body": {
+        "type": "string",
+        "description": "Request body string"
+      },
+      "timeout": {
+        "type": "number",
+        "description": "Timeout in seconds. Default: 30"
+      }
+    },
+    "required": [
+      "url"
+    ]
+  }
+}

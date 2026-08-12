@@ -1,0 +1,86 @@
+{
+  "name": "game_environment",
+  "description": "Get or set environment and post-processing settings",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "action": {
+        "type": "string",
+        "description": "Action: get or set. Default: set"
+      },
+      "backgroundMode": {
+        "type": "number",
+        "description": "0=clear, 1=custom_color, 2=sky, 3=canvas"
+      },
+      "backgroundColor": {
+        "type": "object",
+        "description": "Background color {r,g,b,a}"
+      },
+      "ambientLightColor": {
+        "type": "object",
+        "description": "Ambient light color {r,g,b,a}"
+      },
+      "ambientLightEnergy": {
+        "type": "number",
+        "description": "Ambient light energy"
+      },
+      "fogEnabled": {
+        "type": "boolean",
+        "description": "Enable fog"
+      },
+      "fogDensity": {
+        "type": "number",
+        "description": "Fog density"
+      },
+      "fogLightColor": {
+        "type": "object",
+        "description": "Fog light color {r,g,b,a}"
+      },
+      "glowEnabled": {
+        "type": "boolean",
+        "description": "Enable glow"
+      },
+      "glowIntensity": {
+        "type": "number",
+        "description": "Glow intensity"
+      },
+      "glowBloom": {
+        "type": "number",
+        "description": "Glow bloom"
+      },
+      "tonemapMode": {
+        "type": "number",
+        "description": "0=linear, 1=reinhardt, 2=filmic, 3=aces"
+      },
+      "ssaoEnabled": {
+        "type": "boolean",
+        "description": "Enable SSAO"
+      },
+      "ssaoRadius": {
+        "type": "number",
+        "description": "SSAO radius"
+      },
+      "ssaoIntensity": {
+        "type": "number",
+        "description": "SSAO intensity"
+      },
+      "ssrEnabled": {
+        "type": "boolean",
+        "description": "Enable SSR"
+      },
+      "brightness": {
+        "type": "number",
+        "description": "Brightness adjustment"
+      },
+      "contrast": {
+        "type": "number",
+        "description": "Contrast adjustment"
+      },
+      "saturation": {
+        "type": "number",
+        "description": "Saturation adjustment"
+      }
+    },
+    "required": []
+  }
+}

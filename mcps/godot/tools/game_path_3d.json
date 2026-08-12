@@ -1,0 +1,36 @@
+{
+  "name": "game_path_3d",
+  "description": "Create Path3D/Curve3D and manage curve points",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "parentPath": {
+        "type": "string",
+        "description": "Parent node path"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: create, add_point, set_points, get_points"
+      },
+      "nodePath": {
+        "type": "string",
+        "description": "Path3D node path (for add/set/get)"
+      },
+      "points": {
+        "type": "array",
+        "description": "Array of points [{x,y,z},...]"
+      },
+      "point": {
+        "type": "object",
+        "description": "Single point {x,y,z}"
+      },
+      "name": {
+        "type": "string",
+        "description": "Node name"
+      }
+    },
+    "required": [
+      "action"
+    ]
+  }
+}

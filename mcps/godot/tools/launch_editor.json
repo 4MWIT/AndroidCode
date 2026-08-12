@@ -1,0 +1,16 @@
+{
+  "name": "launch_editor",
+  "description": "Launch Godot editor for a specific project",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Godot project path"
+      }
+    },
+    "required": [
+      "projectPath"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "game_click",
+  "description": "Click at a position in the running Godot game window",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "x": {
+        "type": "number",
+        "description": "X coordinate to click"
+      },
+      "y": {
+        "type": "number",
+        "description": "Y coordinate to click"
+      },
+      "button": {
+        "type": "number",
+        "description": "Mouse button (1=left, 2=right, 3=middle). Default: 1"
+      }
+    },
+    "required": [
+      "x",
+      "y"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "list_projects",
+  "description": "List Godot projects in a directory",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "directory": {
+        "type": "string",
+        "description": "Directory to search for Godot projects"
+      },
+      "recursive": {
+        "type": "boolean",
+        "description": "Whether to search recursively (default: false)"
+      }
+    },
+    "required": [
+      "directory"
+    ]
+  }
+}

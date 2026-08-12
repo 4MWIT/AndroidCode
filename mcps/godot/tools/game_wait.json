@@ -1,0 +1,14 @@
+{
+  "name": "game_wait",
+  "description": "Wait N frames in the running game",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "frames": {
+        "type": "number",
+        "description": "Number of frames to wait. Default: 1"
+      }
+    },
+    "required": []
+  }
+}

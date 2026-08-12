@@ -1,0 +1,37 @@
+{
+  "name": "game_ui_menu",
+  "description": "PopupMenu/MenuBar: add/remove/get menu items",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to PopupMenu/MenuBar"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: get_items, add, remove, set_checked, clear"
+      },
+      "index": {
+        "type": "number",
+        "description": "Item index"
+      },
+      "text": {
+        "type": "string",
+        "description": "Item text (for add)"
+      },
+      "checked": {
+        "type": "boolean",
+        "description": "Checked state"
+      },
+      "id": {
+        "type": "number",
+        "description": "Item ID"
+      }
+    },
+    "required": [
+      "nodePath",
+      "action"
+    ]
+  }
+}

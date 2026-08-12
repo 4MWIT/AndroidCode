@@ -1,0 +1,25 @@
+{
+  "name": "create_scene",
+  "description": "Create a new Godot scene file",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Godot project path"
+      },
+      "scenePath": {
+        "type": "string",
+        "description": "Path where the scene file will be saved (relative to project)"
+      },
+      "rootNodeType": {
+        "type": "string",
+        "description": "Type of the root node (e.g., Node2D, Node3D)"
+      }
+    },
+    "required": [
+      "projectPath",
+      "scenePath"
+    ]
+  }
+}

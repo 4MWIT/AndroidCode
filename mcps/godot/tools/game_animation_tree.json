@@ -1,0 +1,32 @@
+{
+  "name": "game_animation_tree",
+  "description": "AnimationTree state machine travel and params",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to AnimationTree node"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: travel, set_param, get_state, get_params"
+      },
+      "stateName": {
+        "type": "string",
+        "description": "State name (for travel)"
+      },
+      "paramName": {
+        "type": "string",
+        "description": "Parameter name"
+      },
+      "paramValue": {
+        "description": "Parameter value"
+      }
+    },
+    "required": [
+      "nodePath",
+      "action"
+    ]
+  }
+}

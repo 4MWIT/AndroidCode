@@ -1,0 +1,45 @@
+{
+  "name": "game_create_joint",
+  "description": "Create a physics joint between two bodies",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "parentPath": {
+        "type": "string",
+        "description": "Parent node path for the joint"
+      },
+      "jointType": {
+        "type": "string",
+        "description": "Joint type: pin_2d, spring_2d, groove_2d, pin_3d, hinge_3d, cone_3d, slider_3d"
+      },
+      "nodeAPath": {
+        "type": "string",
+        "description": "Path to first body"
+      },
+      "nodeBPath": {
+        "type": "string",
+        "description": "Path to second body"
+      },
+      "stiffness": {
+        "type": "number",
+        "description": "Spring stiffness (spring_2d)"
+      },
+      "damping": {
+        "type": "number",
+        "description": "Spring damping (spring_2d)"
+      },
+      "length": {
+        "type": "number",
+        "description": "Length (spring_2d, groove_2d)"
+      },
+      "softness": {
+        "type": "number",
+        "description": "Softness (pin_2d)"
+      }
+    },
+    "required": [
+      "parentPath",
+      "jointType"
+    ]
+  }
+}

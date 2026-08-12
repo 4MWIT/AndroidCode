@@ -1,0 +1,29 @@
+{
+  "name": "manage_autoloads",
+  "description": "Add, remove, or list autoloads in a Godot project",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Godot project path"
+      },
+      "action": {
+        "type": "string",
+        "description": "\"list\", \"add\", or \"remove\""
+      },
+      "name": {
+        "type": "string",
+        "description": "Autoload name (required for add/remove)"
+      },
+      "path": {
+        "type": "string",
+        "description": "Script/scene path (required for add, e.g. \"res://globals.gd\")"
+      }
+    },
+    "required": [
+      "projectPath",
+      "action"
+    ]
+  }
+}

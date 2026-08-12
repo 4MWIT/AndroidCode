@@ -1,0 +1,25 @@
+{
+  "name": "game_navigate_path",
+  "description": "Query a navigation path between two points",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "start": {
+        "type": "object",
+        "description": "Start point {x,y} or {x,y,z}"
+      },
+      "end": {
+        "type": "object",
+        "description": "End point {x,y} or {x,y,z}"
+      },
+      "optimize": {
+        "type": "boolean",
+        "description": "Use string-pulling optimization. Default: true"
+      }
+    },
+    "required": [
+      "start",
+      "end"
+    ]
+  }
+}

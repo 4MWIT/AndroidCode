@@ -1,0 +1,26 @@
+{
+  "name": "rename_file",
+  "description": "Rename or move a file within the project",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Godot project path"
+      },
+      "filePath": {
+        "type": "string",
+        "description": "Current file path (relative to project)"
+      },
+      "newPath": {
+        "type": "string",
+        "description": "New file path (relative to project)"
+      }
+    },
+    "required": [
+      "projectPath",
+      "filePath",
+      "newPath"
+    ]
+  }
+}

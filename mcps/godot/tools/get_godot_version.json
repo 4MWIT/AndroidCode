@@ -1,0 +1,9 @@
+{
+  "name": "get_godot_version",
+  "description": "Get the installed Godot version",
+  "inputSchema": {
+    "type": "object",
+    "properties": {},
+    "required": []
+  }
+}

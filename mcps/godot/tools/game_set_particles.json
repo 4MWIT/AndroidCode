@@ -1,0 +1,48 @@
+{
+  "name": "game_set_particles",
+  "description": "Configure GPUParticles2D/3D node properties",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to GPUParticles node"
+      },
+      "emitting": {
+        "type": "boolean",
+        "description": "Enable/disable emission"
+      },
+      "amount": {
+        "type": "number",
+        "description": "Number of particles"
+      },
+      "lifetime": {
+        "type": "number",
+        "description": "Particle lifetime in seconds"
+      },
+      "oneShot": {
+        "type": "boolean",
+        "description": "One-shot mode"
+      },
+      "speedScale": {
+        "type": "number",
+        "description": "Speed scale"
+      },
+      "explosiveness": {
+        "type": "number",
+        "description": "Explosiveness ratio (0-1)"
+      },
+      "randomness": {
+        "type": "number",
+        "description": "Randomness ratio (0-1)"
+      },
+      "processMaterial": {
+        "type": "object",
+        "description": "ParticleProcessMaterial settings"
+      }
+    },
+    "required": [
+      "nodePath"
+    ]
+  }
+}

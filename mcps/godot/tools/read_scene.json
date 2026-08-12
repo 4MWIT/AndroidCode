@@ -1,0 +1,21 @@
+{
+  "name": "read_scene",
+  "description": "Read scene file as JSON node tree (headless)",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Godot project path"
+      },
+      "scenePath": {
+        "type": "string",
+        "description": "Scene file path (relative to project)"
+      }
+    },
+    "required": [
+      "projectPath",
+      "scenePath"
+    ]
+  }
+}

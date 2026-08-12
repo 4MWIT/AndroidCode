@@ -1,0 +1,39 @@
+{
+  "name": "add_node",
+  "description": "Add a node to an existing scene",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Godot project path"
+      },
+      "scenePath": {
+        "type": "string",
+        "description": "Scene file path (relative to project)"
+      },
+      "parentNodePath": {
+        "type": "string",
+        "description": "Path to the parent node (e.g., \"root\" or \"root/Player\")"
+      },
+      "nodeType": {
+        "type": "string",
+        "description": "Type of node to add (e.g., Sprite2D, CollisionShape2D)"
+      },
+      "nodeName": {
+        "type": "string",
+        "description": "Name for the new node"
+      },
+      "properties": {
+        "type": "object",
+        "description": "Optional properties to set on the node"
+      }
+    },
+    "required": [
+      "projectPath",
+      "scenePath",
+      "nodeType",
+      "nodeName"
+    ]
+  }
+}

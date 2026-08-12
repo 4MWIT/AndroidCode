@@ -1,0 +1,21 @@
+{
+  "name": "create_directory",
+  "description": "Create a directory inside a Godot project",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Godot project path"
+      },
+      "directoryPath": {
+        "type": "string",
+        "description": "Directory path relative to project root"
+      }
+    },
+    "required": [
+      "projectPath",
+      "directoryPath"
+    ]
+  }
+}

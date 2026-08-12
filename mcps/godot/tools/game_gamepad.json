@@ -1,0 +1,30 @@
+{
+  "name": "game_gamepad",
+  "description": "Send gamepad button or axis input event",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "type": {
+        "type": "string",
+        "description": "\"button\" or \"axis\""
+      },
+      "index": {
+        "type": "number",
+        "description": "Button or axis index"
+      },
+      "value": {
+        "type": "number",
+        "description": "Value: 0/1 for buttons, -1.0 to 1.0 for axes"
+      },
+      "device": {
+        "type": "number",
+        "description": "Gamepad device index. Default: 0"
+      }
+    },
+    "required": [
+      "type",
+      "index",
+      "value"
+    ]
+  }
+}

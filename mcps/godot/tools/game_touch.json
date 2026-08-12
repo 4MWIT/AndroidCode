@@ -1,0 +1,42 @@
+{
+  "name": "game_touch",
+  "description": "Simulate touch press/release/drag and gestures",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "action": {
+        "type": "string",
+        "description": "Action: press, release, drag"
+      },
+      "x": {
+        "type": "number",
+        "description": "Touch X position"
+      },
+      "y": {
+        "type": "number",
+        "description": "Touch Y position"
+      },
+      "index": {
+        "type": "number",
+        "description": "Touch index. Default: 0"
+      },
+      "toX": {
+        "type": "number",
+        "description": "Drag end X (for drag)"
+      },
+      "toY": {
+        "type": "number",
+        "description": "Drag end Y (for drag)"
+      },
+      "steps": {
+        "type": "number",
+        "description": "Drag steps. Default: 10"
+      }
+    },
+    "required": [
+      "action",
+      "x",
+      "y"
+    ]
+  }
+}

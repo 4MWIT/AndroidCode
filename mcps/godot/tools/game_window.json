@@ -1,0 +1,42 @@
+{
+  "name": "game_window",
+  "description": "Get/set window size, fullscreen, title, position",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "action": {
+        "type": "string",
+        "description": "Action: get or set. Default: get"
+      },
+      "width": {
+        "type": "number",
+        "description": "Window width"
+      },
+      "height": {
+        "type": "number",
+        "description": "Window height"
+      },
+      "fullscreen": {
+        "type": "boolean",
+        "description": "Fullscreen mode"
+      },
+      "borderless": {
+        "type": "boolean",
+        "description": "Borderless mode"
+      },
+      "title": {
+        "type": "string",
+        "description": "Window title"
+      },
+      "position": {
+        "type": "object",
+        "description": "Window position {x, y}"
+      },
+      "vsync": {
+        "type": "boolean",
+        "description": "Enable vsync"
+      }
+    },
+    "required": []
+  }
+}

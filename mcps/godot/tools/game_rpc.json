@@ -1,0 +1,42 @@
+{
+  "name": "game_rpc",
+  "description": "Call or configure RPC methods on nodes",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to the node"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: call, configure"
+      },
+      "method": {
+        "type": "string",
+        "description": "Method name"
+      },
+      "args": {
+        "type": "array",
+        "description": "Arguments for the RPC call"
+      },
+      "mode": {
+        "type": "string",
+        "description": "RPC mode: any_peer, authority"
+      },
+      "sync": {
+        "type": "string",
+        "description": "Sync mode: call_local, call_remote"
+      },
+      "channel": {
+        "type": "number",
+        "description": "Transfer channel"
+      }
+    },
+    "required": [
+      "nodePath",
+      "action",
+      "method"
+    ]
+  }
+}

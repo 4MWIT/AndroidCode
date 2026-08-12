@@ -1,0 +1,30 @@
+{
+  "name": "manage_resource",
+  "description": "Read or modify .tres/.res resource files",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Godot project path"
+      },
+      "resourcePath": {
+        "type": "string",
+        "description": "Resource file path (relative to project)"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: read or modify"
+      },
+      "properties": {
+        "type": "object",
+        "description": "Properties to modify"
+      }
+    },
+    "required": [
+      "projectPath",
+      "resourcePath",
+      "action"
+    ]
+  }
+}

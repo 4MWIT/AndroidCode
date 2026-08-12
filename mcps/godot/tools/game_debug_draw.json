@@ -1,0 +1,44 @@
+{
+  "name": "game_debug_draw",
+  "description": "Draw debug lines, spheres, or boxes in 3D",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "action": {
+        "type": "string",
+        "description": "Action: line, sphere, box, or clear"
+      },
+      "from": {
+        "type": "object",
+        "description": "Line start {x,y,z}"
+      },
+      "to": {
+        "type": "object",
+        "description": "Line end {x,y,z}"
+      },
+      "center": {
+        "type": "object",
+        "description": "Sphere/box center {x,y,z}"
+      },
+      "radius": {
+        "type": "number",
+        "description": "Sphere radius. Default: 0.5"
+      },
+      "size": {
+        "type": "object",
+        "description": "Box size {x,y,z}"
+      },
+      "color": {
+        "type": "object",
+        "description": "Draw color {r,g,b,a}. Default: red"
+      },
+      "duration": {
+        "type": "number",
+        "description": "Frames to persist (0=permanent)"
+      }
+    },
+    "required": [
+      "action"
+    ]
+  }
+}

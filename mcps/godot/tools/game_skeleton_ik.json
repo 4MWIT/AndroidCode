@@ -1,0 +1,25 @@
+{
+  "name": "game_skeleton_ik",
+  "description": "SkeletonIK3D start/stop/set target position",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to SkeletonIK3D node"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: start, stop, set_target"
+      },
+      "target": {
+        "type": "object",
+        "description": "Target position {x,y,z}"
+      }
+    },
+    "required": [
+      "nodePath",
+      "action"
+    ]
+  }
+}

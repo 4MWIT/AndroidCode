@@ -1,0 +1,9 @@
+{
+  "name": "get_debug_output",
+  "description": "Get the current debug output and errors",
+  "inputSchema": {
+    "type": "object",
+    "properties": {},
+    "required": []
+  }
+}

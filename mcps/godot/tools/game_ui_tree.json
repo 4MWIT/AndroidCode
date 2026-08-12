@@ -1,0 +1,33 @@
+{
+  "name": "game_ui_tree",
+  "description": "Tree control: get/select/collapse/add/remove items",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to Tree control"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: get_items, select, collapse, expand, add, remove"
+      },
+      "itemPath": {
+        "type": "string",
+        "description": "Item path (slash-separated indices)"
+      },
+      "text": {
+        "type": "string",
+        "description": "Item text (for add)"
+      },
+      "column": {
+        "type": "number",
+        "description": "Column index. Default: 0"
+      }
+    },
+    "required": [
+      "nodePath",
+      "action"
+    ]
+  }
+}

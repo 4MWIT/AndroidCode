@@ -1,0 +1,29 @@
+{
+  "name": "game_gi",
+  "description": "Create/configure VoxelGI or LightmapGI",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "parentPath": {
+        "type": "string",
+        "description": "Parent node path"
+      },
+      "giType": {
+        "type": "string",
+        "description": "Type: voxel_gi or lightmap_gi"
+      },
+      "size": {
+        "type": "object",
+        "description": "Extents size {x,y,z}"
+      },
+      "name": {
+        "type": "string",
+        "description": "Node name"
+      }
+    },
+    "required": [
+      "parentPath",
+      "giType"
+    ]
+  }
+}

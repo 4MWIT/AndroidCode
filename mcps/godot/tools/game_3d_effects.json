@@ -1,0 +1,33 @@
+{
+  "name": "game_3d_effects",
+  "description": "Create ReflectionProbe, Decal, or FogVolume",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "parentPath": {
+        "type": "string",
+        "description": "Parent node path"
+      },
+      "effectType": {
+        "type": "string",
+        "description": "Type: reflection_probe, decal, fog_volume"
+      },
+      "size": {
+        "type": "object",
+        "description": "Effect size {x,y,z}"
+      },
+      "intensity": {
+        "type": "number",
+        "description": "Effect intensity"
+      },
+      "name": {
+        "type": "string",
+        "description": "Node name"
+      }
+    },
+    "required": [
+      "parentPath",
+      "effectType"
+    ]
+  }
+}

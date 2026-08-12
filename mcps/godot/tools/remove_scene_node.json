@@ -1,0 +1,26 @@
+{
+  "name": "remove_scene_node",
+  "description": "Remove a node from a scene file (headless)",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Godot project path"
+      },
+      "scenePath": {
+        "type": "string",
+        "description": "Scene file path (relative to project)"
+      },
+      "nodePath": {
+        "type": "string",
+        "description": "Path to the node to remove (e.g., \"root/Player/OldNode\")"
+      }
+    },
+    "required": [
+      "projectPath",
+      "scenePath",
+      "nodePath"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "game_get_property",
+  "description": "Get a property value from any node in the running game by its path",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to the node (e.g., \"/root/Player\", \"/root/Main/Enemy\")"
+      },
+      "property": {
+        "type": "string",
+        "description": "Property name to get (e.g., \"position\", \"health\", \"visible\")"
+      }
+    },
+    "required": [
+      "nodePath",
+      "property"
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "game_ui_range",
+  "description": "ProgressBar/Slider/SpinBox/ColorPicker get/set",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to Range/ColorPicker node"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: get or set"
+      },
+      "value": {
+        "type": "number",
+        "description": "Value (for Range nodes)"
+      },
+      "minValue": {
+        "type": "number",
+        "description": "Minimum value"
+      },
+      "maxValue": {
+        "type": "number",
+        "description": "Maximum value"
+      },
+      "step": {
+        "type": "number",
+        "description": "Step value"
+      },
+      "color": {
+        "type": "object",
+        "description": "Color {r,g,b,a} (for ColorPicker)"
+      }
+    },
+    "required": [
+      "nodePath",
+      "action"
+    ]
+  }
+}

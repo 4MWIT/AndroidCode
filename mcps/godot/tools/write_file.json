@@ -1,0 +1,26 @@
+{
+  "name": "write_file",
+  "description": "Create or overwrite a text file in a Godot project",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Godot project path"
+      },
+      "filePath": {
+        "type": "string",
+        "description": "File path relative to project root"
+      },
+      "content": {
+        "type": "string",
+        "description": "File content to write"
+      }
+    },
+    "required": [
+      "projectPath",
+      "filePath",
+      "content"
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "game_bone_pose",
+  "description": "Get or set bone poses on a Skeleton3D node",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to Skeleton3D node"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: list, get, or set. Default: list"
+      },
+      "boneIndex": {
+        "type": "number",
+        "description": "Bone index"
+      },
+      "boneName": {
+        "type": "string",
+        "description": "Bone name (alternative to index)"
+      },
+      "position": {
+        "type": "object",
+        "description": "Bone position {x,y,z}"
+      },
+      "rotation": {
+        "type": "object",
+        "description": "Bone rotation quaternion {x,y,z,w}"
+      },
+      "scale": {
+        "type": "object",
+        "description": "Bone scale {x,y,z}"
+      }
+    },
+    "required": [
+      "nodePath"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "game_ui_theme",
+  "description": "Apply theme overrides to a Control node",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to Control node"
+      },
+      "overrides": {
+        "type": "object",
+        "description": "Theme overrides: {colors, constants, fontSizes}"
+      }
+    },
+    "required": [
+      "nodePath",
+      "overrides"
+    ]
+  }
+}

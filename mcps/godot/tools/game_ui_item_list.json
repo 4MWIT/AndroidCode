@@ -1,0 +1,29 @@
+{
+  "name": "game_ui_item_list",
+  "description": "ItemList/OptionButton: get/select/add/remove items",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to ItemList/OptionButton"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: get_items, select, add, remove, clear"
+      },
+      "index": {
+        "type": "number",
+        "description": "Item index"
+      },
+      "text": {
+        "type": "string",
+        "description": "Item text (for add)"
+      }
+    },
+    "required": [
+      "nodePath",
+      "action"
+    ]
+  }
+}

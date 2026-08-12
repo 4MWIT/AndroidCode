@@ -1,0 +1,20 @@
+{
+  "name": "game_find_nodes_by_class",
+  "description": "Find all nodes of a specific class type in the running game",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "className": {
+        "type": "string",
+        "description": "Class name to search for (e.g., \"CharacterBody3D\", \"Light3D\")"
+      },
+      "rootPath": {
+        "type": "string",
+        "description": "Root node path to start searching from. Default: \"/root\""
+      }
+    },
+    "required": [
+      "className"
+    ]
+  }
+}

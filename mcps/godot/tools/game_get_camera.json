@@ -1,0 +1,9 @@
+{
+  "name": "game_get_camera",
+  "description": "Get active camera position, rotation, and size",
+  "inputSchema": {
+    "type": "object",
+    "properties": {},
+    "required": []
+  }
+}

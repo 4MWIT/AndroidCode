@@ -1,0 +1,25 @@
+{
+  "name": "game_reparent_node",
+  "description": "Move a node to a new parent in the running game's scene tree",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to the node to move"
+      },
+      "newParentPath": {
+        "type": "string",
+        "description": "Path to the new parent node"
+      },
+      "keepGlobalTransform": {
+        "type": "boolean",
+        "description": "Whether to keep the global transform. Default: true"
+      }
+    },
+    "required": [
+      "nodePath",
+      "newParentPath"
+    ]
+  }
+}

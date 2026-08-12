@@ -1,0 +1,32 @@
+{
+  "name": "game_physics_3d",
+  "description": "Area3D queries and point/shape intersection tests",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "action": {
+        "type": "string",
+        "description": "Action: overlap, point_query, shape_query, ray"
+      },
+      "nodePath": {
+        "type": "string",
+        "description": "Area3D/node path (for overlap)"
+      },
+      "from": {
+        "type": "object",
+        "description": "Ray/point origin {x,y,z}"
+      },
+      "to": {
+        "type": "object",
+        "description": "Ray end {x,y,z}"
+      },
+      "collisionMask": {
+        "type": "number",
+        "description": "Collision mask bitmask"
+      }
+    },
+    "required": [
+      "action"
+    ]
+  }
+}

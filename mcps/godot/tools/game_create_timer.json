@@ -1,0 +1,30 @@
+{
+  "name": "game_create_timer",
+  "description": "Create a Timer node with configuration",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "parentPath": {
+        "type": "string",
+        "description": "Parent node path. Default: \"/root\""
+      },
+      "waitTime": {
+        "type": "number",
+        "description": "Timer duration in seconds. Default: 1.0"
+      },
+      "oneShot": {
+        "type": "boolean",
+        "description": "One-shot mode. Default: false"
+      },
+      "autostart": {
+        "type": "boolean",
+        "description": "Auto-start the timer. Default: false"
+      },
+      "name": {
+        "type": "string",
+        "description": "Optional timer node name"
+      }
+    },
+    "required": []
+  }
+}

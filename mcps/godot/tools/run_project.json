@@ -1,0 +1,20 @@
+{
+  "name": "run_project",
+  "description": "Run the Godot project and capture output",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Godot project path"
+      },
+      "scene": {
+        "type": "string",
+        "description": "Optional: Specific scene to run"
+      }
+    },
+    "required": [
+      "projectPath"
+    ]
+  }
+}

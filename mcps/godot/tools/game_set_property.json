@@ -1,0 +1,29 @@
+{
+  "name": "game_set_property",
+  "description": "Set a property on a node in the running game",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to the node"
+      },
+      "property": {
+        "type": "string",
+        "description": "Property name to set"
+      },
+      "value": {
+        "description": "Value to set. Use objects for vectors/colors"
+      },
+      "typeHint": {
+        "type": "string",
+        "description": "Optional type hint: \"Vector2\", \"Vector3\", \"Color\""
+      }
+    },
+    "required": [
+      "nodePath",
+      "property",
+      "value"
+    ]
+  }
+}

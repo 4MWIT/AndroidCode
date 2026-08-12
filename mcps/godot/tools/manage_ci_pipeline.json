@@ -1,0 +1,32 @@
+{
+  "name": "manage_ci_pipeline",
+  "description": "Create/read GitHub Actions workflow for automated Godot exports",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Absolute path to Godot project"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: create or read"
+      },
+      "platforms": {
+        "type": "array",
+        "description": "Target platforms: windows, linux, macos, web",
+        "items": {
+          "type": "string"
+        }
+      },
+      "godotVersion": {
+        "type": "string",
+        "description": "Godot version (e.g. 4.3-stable)"
+      }
+    },
+    "required": [
+      "projectPath",
+      "action"
+    ]
+  }
+}

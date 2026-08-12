@@ -1,0 +1,33 @@
+{
+  "name": "game_animation_control",
+  "description": "AnimationPlayer seek/queue/speed/info control",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to AnimationPlayer node"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: seek, queue, set_speed, get_info, stop"
+      },
+      "animationName": {
+        "type": "string",
+        "description": "Animation name"
+      },
+      "position": {
+        "type": "number",
+        "description": "Seek position in seconds"
+      },
+      "speed": {
+        "type": "number",
+        "description": "Playback speed scale"
+      }
+    },
+    "required": [
+      "nodePath",
+      "action"
+    ]
+  }
+}

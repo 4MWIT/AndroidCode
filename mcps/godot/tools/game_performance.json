@@ -1,0 +1,9 @@
+{
+  "name": "game_performance",
+  "description": "Get performance metrics (FPS, memory, draw calls)",
+  "inputSchema": {
+    "type": "object",
+    "properties": {},
+    "required": []
+  }
+}

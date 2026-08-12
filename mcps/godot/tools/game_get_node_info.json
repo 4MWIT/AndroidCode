@@ -1,0 +1,16 @@
+{
+  "name": "game_get_node_info",
+  "description": "Get node info: class, properties, signals, methods, children",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to the node (e.g., \"/root/Player\")"
+      }
+    },
+    "required": [
+      "nodePath"
+    ]
+  }
+}

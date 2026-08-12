@@ -1,0 +1,28 @@
+{
+  "name": "game_input_action",
+  "description": "Manage runtime InputMap actions and strength",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "action": {
+        "type": "string",
+        "description": "Action: set_strength, add_action, remove_action, list"
+      },
+      "actionName": {
+        "type": "string",
+        "description": "Input action name"
+      },
+      "strength": {
+        "type": "number",
+        "description": "Action strength 0.0-1.0"
+      },
+      "key": {
+        "type": "string",
+        "description": "Key name (for add_action)"
+      }
+    },
+    "required": [
+      "action"
+    ]
+  }
+}

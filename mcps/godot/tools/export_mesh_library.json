@@ -1,0 +1,33 @@
+{
+  "name": "export_mesh_library",
+  "description": "Export a scene as a MeshLibrary resource",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Godot project path"
+      },
+      "scenePath": {
+        "type": "string",
+        "description": "Path to the scene file (.tscn) to export"
+      },
+      "outputPath": {
+        "type": "string",
+        "description": "Path where the mesh library (.res) will be saved"
+      },
+      "meshItemNames": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        },
+        "description": "Optional: Names of specific mesh items to include (defaults to all)"
+      }
+    },
+    "required": [
+      "projectPath",
+      "scenePath",
+      "outputPath"
+    ]
+  }
+}

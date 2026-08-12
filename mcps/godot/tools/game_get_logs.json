@@ -1,0 +1,9 @@
+{
+  "name": "game_get_logs",
+  "description": "Get new print output from the running game since last call",
+  "inputSchema": {
+    "type": "object",
+    "properties": {},
+    "required": []
+  }
+}

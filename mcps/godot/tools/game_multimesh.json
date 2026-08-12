@@ -1,0 +1,44 @@
+{
+  "name": "game_multimesh",
+  "description": "Create/configure MultiMeshInstance3D for instancing",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "parentPath": {
+        "type": "string",
+        "description": "Parent node path"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: create, set_instance, get_info"
+      },
+      "nodePath": {
+        "type": "string",
+        "description": "Node path (for set_instance/get_info)"
+      },
+      "meshType": {
+        "type": "string",
+        "description": "Mesh: box, sphere, cylinder, quad"
+      },
+      "count": {
+        "type": "number",
+        "description": "Instance count"
+      },
+      "index": {
+        "type": "number",
+        "description": "Instance index (for set_instance)"
+      },
+      "transform": {
+        "type": "object",
+        "description": "Transform {origin:{x,y,z}, rotation:{x,y,z}}"
+      },
+      "name": {
+        "type": "string",
+        "description": "Node name"
+      }
+    },
+    "required": [
+      "action"
+    ]
+  }
+}

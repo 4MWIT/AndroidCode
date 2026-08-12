@@ -1,0 +1,5 @@
+## Copy to local.properties and fill your own keys (never commit local.properties)
+sdk.dir=C\:\\Android_SDK
+# API keys for AndroidCode (former Ai_code) - get at opencode.ai and console.nvidia.com
+aicode.opencodelKey=
+aicode.nvidiaKey=

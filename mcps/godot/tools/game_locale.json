@@ -1,0 +1,24 @@
+{
+  "name": "game_locale",
+  "description": "Set/get locale and translate strings at runtime",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "action": {
+        "type": "string",
+        "description": "Action: get, set, translate"
+      },
+      "locale": {
+        "type": "string",
+        "description": "Locale code (e.g. en, es, fr)"
+      },
+      "key": {
+        "type": "string",
+        "description": "Translation key (for translate)"
+      }
+    },
+    "required": [
+      "action"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "manage_input_map",
+  "description": "Add, remove, or list input actions and bindings",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Godot project path"
+      },
+      "action": {
+        "type": "string",
+        "description": "\"list\", \"add\", or \"remove\""
+      },
+      "actionName": {
+        "type": "string",
+        "description": "Input action name (required for add/remove)"
+      },
+      "key": {
+        "type": "string",
+        "description": "Key to bind (for add, e.g. \"W\", \"Space\")"
+      },
+      "deadzone": {
+        "type": "number",
+        "description": "Deadzone for the action. Default: 0.5"
+      }
+    },
+    "required": [
+      "projectPath",
+      "action"
+    ]
+  }
+}

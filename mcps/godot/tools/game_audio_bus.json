@@ -1,0 +1,26 @@
+{
+  "name": "game_audio_bus",
+  "description": "Set volume, mute, or solo on an audio bus",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "busName": {
+        "type": "string",
+        "description": "Bus name. Default: \"Master\""
+      },
+      "volume": {
+        "type": "number",
+        "description": "Volume (linear 0-1)"
+      },
+      "mute": {
+        "type": "boolean",
+        "description": "Mute the bus"
+      },
+      "solo": {
+        "type": "boolean",
+        "description": "Solo the bus"
+      }
+    },
+    "required": []
+  }
+}

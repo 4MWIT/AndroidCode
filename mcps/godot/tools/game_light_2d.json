@@ -1,0 +1,40 @@
+{
+  "name": "game_light_2d",
+  "description": "Create/configure 2D lights and light occluders",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "parentPath": {
+        "type": "string",
+        "description": "Parent node path"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: create_point, create_directional, create_occluder"
+      },
+      "nodePath": {
+        "type": "string",
+        "description": "Node path (for configure)"
+      },
+      "color": {
+        "type": "object",
+        "description": "Light color {r,g,b,a}"
+      },
+      "energy": {
+        "type": "number",
+        "description": "Light energy"
+      },
+      "range": {
+        "type": "number",
+        "description": "Light texture range"
+      },
+      "name": {
+        "type": "string",
+        "description": "Node name"
+      }
+    },
+    "required": [
+      "action"
+    ]
+  }
+}

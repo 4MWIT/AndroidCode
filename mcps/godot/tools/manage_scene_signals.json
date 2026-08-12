@@ -1,0 +1,42 @@
+{
+  "name": "manage_scene_signals",
+  "description": "List/add/remove signal connections in .tscn files",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Godot project path"
+      },
+      "scenePath": {
+        "type": "string",
+        "description": "Scene file path (relative to project)"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: list, add, remove"
+      },
+      "signalName": {
+        "type": "string",
+        "description": "Signal name"
+      },
+      "sourcePath": {
+        "type": "string",
+        "description": "Source node path"
+      },
+      "targetPath": {
+        "type": "string",
+        "description": "Target node path"
+      },
+      "method": {
+        "type": "string",
+        "description": "Target method name"
+      }
+    },
+    "required": [
+      "projectPath",
+      "scenePath",
+      "action"
+    ]
+  }
+}

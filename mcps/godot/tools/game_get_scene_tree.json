@@ -1,0 +1,9 @@
+{
+  "name": "game_get_scene_tree",
+  "description": "Get scene tree structure of the running game",
+  "inputSchema": {
+    "type": "object",
+    "properties": {},
+    "required": []
+  }
+}

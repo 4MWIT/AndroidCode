@@ -1,0 +1,9 @@
+{
+  "name": "game_os_info",
+  "description": "Get platform, locale, screen, adapter, memory info",
+  "inputSchema": {
+    "type": "object",
+    "properties": {},
+    "required": []
+  }
+}

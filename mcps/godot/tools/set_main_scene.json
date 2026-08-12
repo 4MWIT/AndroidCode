@@ -1,0 +1,21 @@
+{
+  "name": "set_main_scene",
+  "description": "Set the main scene in project.godot",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Godot project path"
+      },
+      "scenePath": {
+        "type": "string",
+        "description": "Scene path (relative to project)"
+      }
+    },
+    "required": [
+      "projectPath",
+      "scenePath"
+    ]
+  }
+}

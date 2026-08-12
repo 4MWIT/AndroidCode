@@ -1,0 +1,37 @@
+{
+  "name": "game_create_animation",
+  "description": "Create an animation with tracks and keyframes",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to AnimationPlayer node"
+      },
+      "animationName": {
+        "type": "string",
+        "description": "Name for the new animation"
+      },
+      "length": {
+        "type": "number",
+        "description": "Animation length in seconds. Default: 1.0"
+      },
+      "loopMode": {
+        "type": "number",
+        "description": "0=none, 1=linear, 2=pingpong"
+      },
+      "tracks": {
+        "type": "array",
+        "description": "Array of track definitions"
+      },
+      "library": {
+        "type": "string",
+        "description": "Animation library name. Default: \"\""
+      }
+    },
+    "required": [
+      "nodePath",
+      "animationName"
+    ]
+  }
+}

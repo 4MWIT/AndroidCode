@@ -1,0 +1,29 @@
+{
+  "name": "game_ui_tabs",
+  "description": "TabContainer/TabBar: get/set current tab",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to TabContainer/TabBar"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: get_tabs, set_current, set_title"
+      },
+      "index": {
+        "type": "number",
+        "description": "Tab index"
+      },
+      "title": {
+        "type": "string",
+        "description": "Tab title"
+      }
+    },
+    "required": [
+      "nodePath",
+      "action"
+    ]
+  }
+}

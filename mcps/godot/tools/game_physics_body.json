@@ -1,0 +1,55 @@
+{
+  "name": "game_physics_body",
+  "description": "Configure physics body properties (mass, velocity, etc.)",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to physics body node"
+      },
+      "gravityScale": {
+        "type": "number",
+        "description": "Gravity scale"
+      },
+      "mass": {
+        "type": "number",
+        "description": "Body mass"
+      },
+      "linearVelocity": {
+        "type": "object",
+        "description": "Linear velocity {x,y} or {x,y,z}"
+      },
+      "angularVelocity": {
+        "description": "Angular velocity (float for 2D, {x,y,z} for 3D)"
+      },
+      "linearDamp": {
+        "type": "number",
+        "description": "Linear damping"
+      },
+      "angularDamp": {
+        "type": "number",
+        "description": "Angular damping"
+      },
+      "friction": {
+        "type": "number",
+        "description": "Physics material friction"
+      },
+      "bounce": {
+        "type": "number",
+        "description": "Physics material bounce"
+      },
+      "freeze": {
+        "type": "boolean",
+        "description": "Freeze the body"
+      },
+      "sleeping": {
+        "type": "boolean",
+        "description": "Put body to sleep"
+      }
+    },
+    "required": [
+      "nodePath"
+    ]
+  }
+}

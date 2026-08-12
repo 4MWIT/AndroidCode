@@ -1,0 +1,32 @@
+{
+  "name": "game_physics_2d",
+  "description": "Area2D queries and 2D point/shape intersections",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "action": {
+        "type": "string",
+        "description": "Action: overlap, point_query, shape_query, ray"
+      },
+      "nodePath": {
+        "type": "string",
+        "description": "Area2D/node path (for overlap)"
+      },
+      "from": {
+        "type": "object",
+        "description": "Origin point {x,y}"
+      },
+      "to": {
+        "type": "object",
+        "description": "End point {x,y} (for ray)"
+      },
+      "collisionMask": {
+        "type": "number",
+        "description": "Collision mask bitmask"
+      }
+    },
+    "required": [
+      "action"
+    ]
+  }
+}

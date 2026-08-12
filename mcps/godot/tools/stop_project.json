@@ -1,0 +1,9 @@
+{
+  "name": "stop_project",
+  "description": "Stop the currently running Godot project",
+  "inputSchema": {
+    "type": "object",
+    "properties": {},
+    "required": []
+  }
+}

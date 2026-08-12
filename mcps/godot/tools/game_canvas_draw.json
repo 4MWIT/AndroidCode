@@ -1,0 +1,60 @@
+{
+  "name": "game_canvas_draw",
+  "description": "2D drawing: line/rect/circle/polygon/text/clear",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "parentPath": {
+        "type": "string",
+        "description": "Parent node path for draw node"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: line, rect, circle, polygon, text, clear"
+      },
+      "from": {
+        "type": "object",
+        "description": "Start point {x,y}"
+      },
+      "to": {
+        "type": "object",
+        "description": "End point {x,y}"
+      },
+      "center": {
+        "type": "object",
+        "description": "Center point {x,y}"
+      },
+      "radius": {
+        "type": "number",
+        "description": "Circle radius"
+      },
+      "rect": {
+        "type": "object",
+        "description": "Rectangle {x,y,w,h}"
+      },
+      "points": {
+        "type": "array",
+        "description": "Polygon points [{x,y},...]"
+      },
+      "text": {
+        "type": "string",
+        "description": "Text to draw"
+      },
+      "color": {
+        "type": "object",
+        "description": "Draw color {r,g,b,a}"
+      },
+      "width": {
+        "type": "number",
+        "description": "Line width. Default: 2"
+      },
+      "filled": {
+        "type": "boolean",
+        "description": "Fill shape. Default: true"
+      }
+    },
+    "required": [
+      "action"
+    ]
+  }
+}

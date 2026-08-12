@@ -1,0 +1,42 @@
+{
+  "name": "game_viewport",
+  "description": "Create or configure a SubViewport node",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "action": {
+        "type": "string",
+        "description": "Action: create, configure, or get"
+      },
+      "parentPath": {
+        "type": "string",
+        "description": "Parent path (for create)"
+      },
+      "nodePath": {
+        "type": "string",
+        "description": "SubViewport path (for configure/get)"
+      },
+      "width": {
+        "type": "number",
+        "description": "Viewport width"
+      },
+      "height": {
+        "type": "number",
+        "description": "Viewport height"
+      },
+      "msaa": {
+        "type": "number",
+        "description": "MSAA level (0=disabled, 1=2x, 2=4x, 3=8x)"
+      },
+      "transparentBg": {
+        "type": "boolean",
+        "description": "Transparent background"
+      },
+      "name": {
+        "type": "string",
+        "description": "Viewport name (for create)"
+      }
+    },
+    "required": []
+  }
+}

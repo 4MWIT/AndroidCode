@@ -1,0 +1,24 @@
+{
+  "name": "game_manage_group",
+  "description": "Add or remove a node from a group, or list groups",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to the node"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: add, remove, get_groups, clear_group"
+      },
+      "group": {
+        "type": "string",
+        "description": "Group name"
+      }
+    },
+    "required": [
+      "action"
+    ]
+  }
+}

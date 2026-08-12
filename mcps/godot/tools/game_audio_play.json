@@ -1,0 +1,40 @@
+{
+  "name": "game_audio_play",
+  "description": "Play, stop, or pause an AudioStreamPlayer node",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to AudioStreamPlayer/2D/3D node"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: play, stop, pause, resume"
+      },
+      "stream": {
+        "type": "string",
+        "description": "Optional res:// path to load a new stream"
+      },
+      "volume": {
+        "type": "number",
+        "description": "Volume (linear 0-1)"
+      },
+      "pitch": {
+        "type": "number",
+        "description": "Pitch scale"
+      },
+      "bus": {
+        "type": "string",
+        "description": "Audio bus name"
+      },
+      "fromPosition": {
+        "type": "number",
+        "description": "Start position in seconds"
+      }
+    },
+    "required": [
+      "nodePath"
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "name": "game_terrain",
+  "description": "Create/modify terrain meshes from heightmap data",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "action": {
+        "type": "string",
+        "description": "Action: create, modify, get_height, paint"
+      },
+      "parentPath": {
+        "type": "string",
+        "description": "Parent node path"
+      },
+      "nodePath": {
+        "type": "string",
+        "description": "Terrain node path"
+      },
+      "heightData": {
+        "type": "array",
+        "description": "Array of float height values (for create)",
+        "items": {
+          "type": "number"
+        }
+      },
+      "width": {
+        "type": "number",
+        "description": "Terrain width in vertices"
+      },
+      "depth": {
+        "type": "number",
+        "description": "Terrain depth in vertices"
+      },
+      "maxHeight": {
+        "type": "number",
+        "description": "Maximum terrain height"
+      },
+      "x": {
+        "type": "number",
+        "description": "X position (for modify/get_height/paint)"
+      },
+      "z": {
+        "type": "number",
+        "description": "Z position (for modify/get_height/paint)"
+      },
+      "radius": {
+        "type": "number",
+        "description": "Brush radius (for modify/paint)"
+      },
+      "heightDelta": {
+        "type": "number",
+        "description": "Height change amount (for modify)"
+      },
+      "color": {
+        "type": "object",
+        "description": "Vertex color {r,g,b,a} (for paint)"
+      },
+      "name": {
+        "type": "string",
+        "description": "Node name"
+      }
+    },
+    "required": [
+      "action"
+    ]
+  }
+}

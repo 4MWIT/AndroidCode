@@ -1,0 +1,33 @@
+{
+  "name": "manage_docker_export",
+  "description": "Create Dockerfile for headless Godot export",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Absolute path to Godot project"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: create or read"
+      },
+      "godotVersion": {
+        "type": "string",
+        "description": "Godot version (e.g. 4.3-stable)"
+      },
+      "exportPreset": {
+        "type": "string",
+        "description": "Export preset name"
+      },
+      "baseImage": {
+        "type": "string",
+        "description": "Base Docker image (default: ubuntu:22.04)"
+      }
+    },
+    "required": [
+      "projectPath",
+      "action"
+    ]
+  }
+}

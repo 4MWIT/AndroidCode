@@ -1,0 +1,22 @@
+{
+  "name": "game_key_press",
+  "description": "Send a key press or input action to the running game",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "key": {
+        "type": "string",
+        "description": "Key name (e.g. \"W\", \"Space\", \"Escape\", \"Enter\")"
+      },
+      "action": {
+        "type": "string",
+        "description": "Godot input action name (e.g. \"move_forward\", \"ui_accept\")"
+      },
+      "pressed": {
+        "type": "boolean",
+        "description": "Press (true) or release (false). Default: true (auto-release)"
+      }
+    },
+    "required": []
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "game_disconnect_signal",
+  "description": "Disconnect a signal connection in the running game",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to the source node"
+      },
+      "signalName": {
+        "type": "string",
+        "description": "Name of the signal"
+      },
+      "targetPath": {
+        "type": "string",
+        "description": "Path to the target node"
+      },
+      "method": {
+        "type": "string",
+        "description": "Method name on the target"
+      }
+    },
+    "required": [
+      "nodePath",
+      "signalName",
+      "targetPath",
+      "method"
+    ]
+  }
+}

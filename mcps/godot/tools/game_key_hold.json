@@ -1,0 +1,18 @@
+{
+  "name": "game_key_hold",
+  "description": "Hold a key down without auto-releasing",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "key": {
+        "type": "string",
+        "description": "Key name (e.g. \"W\", \"Space\", \"Shift\")"
+      },
+      "action": {
+        "type": "string",
+        "description": "Godot input action name (e.g. \"move_forward\")"
+      }
+    },
+    "required": []
+  }
+}

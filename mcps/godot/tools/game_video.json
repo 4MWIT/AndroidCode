@@ -1,0 +1,48 @@
+{
+  "name": "game_video",
+  "description": "Video playback control: play, pause, stop, seek on VideoStreamPlayer",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "action": {
+        "type": "string",
+        "description": "Action: create, play, pause, stop, seek, get_status"
+      },
+      "nodePath": {
+        "type": "string",
+        "description": "Path to VideoStreamPlayer node"
+      },
+      "parentPath": {
+        "type": "string",
+        "description": "Parent node path (for create)"
+      },
+      "videoPath": {
+        "type": "string",
+        "description": "res:// path to video file"
+      },
+      "position": {
+        "type": "number",
+        "description": "Seek position in seconds"
+      },
+      "volume": {
+        "type": "number",
+        "description": "Volume (linear 0-1)"
+      },
+      "loop": {
+        "type": "boolean",
+        "description": "Enable looping"
+      },
+      "autoplay": {
+        "type": "boolean",
+        "description": "Auto-play on ready"
+      },
+      "name": {
+        "type": "string",
+        "description": "Node name (for create)"
+      }
+    },
+    "required": [
+      "action"
+    ]
+  }
+}

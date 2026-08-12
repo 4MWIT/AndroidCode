@@ -1,0 +1,36 @@
+{
+  "name": "game_canvas",
+  "description": "Create/configure CanvasLayer and CanvasModulate",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "parentPath": {
+        "type": "string",
+        "description": "Parent node path"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: create_layer, create_modulate, configure"
+      },
+      "nodePath": {
+        "type": "string",
+        "description": "Node path (for configure)"
+      },
+      "layer": {
+        "type": "number",
+        "description": "Canvas layer number"
+      },
+      "color": {
+        "type": "object",
+        "description": "Modulate color {r,g,b,a}"
+      },
+      "name": {
+        "type": "string",
+        "description": "Node name"
+      }
+    },
+    "required": [
+      "action"
+    ]
+  }
+}

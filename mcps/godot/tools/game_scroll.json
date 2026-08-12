@@ -1,0 +1,29 @@
+{
+  "name": "game_scroll",
+  "description": "Send mouse scroll wheel event at position",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "x": {
+        "type": "number",
+        "description": "X position for scroll event"
+      },
+      "y": {
+        "type": "number",
+        "description": "Y position for scroll event"
+      },
+      "direction": {
+        "type": "string",
+        "description": "\"up\", \"down\", \"left\", or \"right\". Default: \"up\""
+      },
+      "amount": {
+        "type": "number",
+        "description": "Scroll amount (clicks). Default: 1"
+      }
+    },
+    "required": [
+      "x",
+      "y"
+    ]
+  }
+}

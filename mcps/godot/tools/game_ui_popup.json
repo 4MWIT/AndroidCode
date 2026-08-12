@@ -1,0 +1,33 @@
+{
+  "name": "game_ui_popup",
+  "description": "Show/hide/popup for Popup/Dialog/Window nodes",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to Popup/Dialog/Window"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: popup_centered, popup, hide, get_info"
+      },
+      "size": {
+        "type": "object",
+        "description": "Popup size {x,y}"
+      },
+      "title": {
+        "type": "string",
+        "description": "Dialog title text"
+      },
+      "text": {
+        "type": "string",
+        "description": "Dialog body text"
+      }
+    },
+    "required": [
+      "nodePath",
+      "action"
+    ]
+  }
+}

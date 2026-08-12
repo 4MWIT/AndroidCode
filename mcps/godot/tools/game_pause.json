@@ -1,0 +1,14 @@
+{
+  "name": "game_pause",
+  "description": "Pause or unpause the running game",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "paused": {
+        "type": "boolean",
+        "description": "True to pause, false to unpause. Default: true"
+      }
+    },
+    "required": []
+  }
+}

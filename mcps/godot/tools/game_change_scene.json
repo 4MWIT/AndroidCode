@@ -1,0 +1,16 @@
+{
+  "name": "game_change_scene",
+  "description": "Switch to a different scene file in the running game",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "scenePath": {
+        "type": "string",
+        "description": "Resource path to the scene (e.g., \"res://scenes/levels/level2.tscn\")"
+      }
+    },
+    "required": [
+      "scenePath"
+    ]
+  }
+}

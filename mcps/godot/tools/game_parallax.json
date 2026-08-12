@@ -1,0 +1,40 @@
+{
+  "name": "game_parallax",
+  "description": "Create/configure ParallaxBackground and layers",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "parentPath": {
+        "type": "string",
+        "description": "Parent node path"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: create_background, add_layer, configure"
+      },
+      "nodePath": {
+        "type": "string",
+        "description": "Node path (for configure)"
+      },
+      "motionScale": {
+        "type": "object",
+        "description": "Motion scale {x,y}"
+      },
+      "motionOffset": {
+        "type": "object",
+        "description": "Motion offset {x,y}"
+      },
+      "mirroring": {
+        "type": "object",
+        "description": "Mirroring {x,y}"
+      },
+      "name": {
+        "type": "string",
+        "description": "Node name"
+      }
+    },
+    "required": [
+      "action"
+    ]
+  }
+}

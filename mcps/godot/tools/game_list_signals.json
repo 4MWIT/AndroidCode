@@ -1,0 +1,16 @@
+{
+  "name": "game_list_signals",
+  "description": "List all signals on a node with connections",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to the node"
+      }
+    },
+    "required": [
+      "nodePath"
+    ]
+  }
+}

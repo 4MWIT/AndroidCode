@@ -1,0 +1,25 @@
+{
+  "name": "game_call_method",
+  "description": "Call a method on any node in the running game with optional arguments",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to the node"
+      },
+      "method": {
+        "type": "string",
+        "description": "Method name to call"
+      },
+      "args": {
+        "type": "array",
+        "description": "Optional array of arguments to pass to the method"
+      }
+    },
+    "required": [
+      "nodePath",
+      "method"
+    ]
+  }
+}

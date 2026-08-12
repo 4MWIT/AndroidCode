@@ -1,0 +1,37 @@
+{
+  "name": "game_shape_2d",
+  "description": "Line2D/Polygon2D point manipulation",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to Line2D/Polygon2D node"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: add_point, set_points, clear, get_points"
+      },
+      "points": {
+        "type": "array",
+        "description": "Array of points [{x,y},...]"
+      },
+      "point": {
+        "type": "object",
+        "description": "Single point {x,y}"
+      },
+      "width": {
+        "type": "number",
+        "description": "Line width"
+      },
+      "color": {
+        "type": "object",
+        "description": "Color {r,g,b,a}"
+      }
+    },
+    "required": [
+      "nodePath",
+      "action"
+    ]
+  }
+}

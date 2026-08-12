@@ -1,0 +1,26 @@
+{
+  "name": "game_serialize_state",
+  "description": "Save or load node tree state as JSON",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Root node path. Default: \"/root\""
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: save or load. Default: save"
+      },
+      "data": {
+        "type": "object",
+        "description": "State data to restore (for load)"
+      },
+      "maxDepth": {
+        "type": "number",
+        "description": "Max tree depth to serialize. Default: 5"
+      }
+    },
+    "required": []
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "name": "game_visual_shader",
+  "description": "Create and edit VisualShader graphs: add/connect/disconnect nodes",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "action": {
+        "type": "string",
+        "description": "Action: create, add_node, connect, disconnect, get_nodes, apply"
+      },
+      "nodePath": {
+        "type": "string",
+        "description": "Target node path (for apply)"
+      },
+      "shaderType": {
+        "type": "string",
+        "description": "Shader type: spatial, canvas_item, particles, sky, fog"
+      },
+      "nodeClass": {
+        "type": "string",
+        "description": "VisualShaderNode class name (for add_node)"
+      },
+      "position": {
+        "type": "object",
+        "description": "Node position {x, y} (for add_node)"
+      },
+      "fromNode": {
+        "type": "number",
+        "description": "Source node ID (for connect/disconnect)"
+      },
+      "fromPort": {
+        "type": "number",
+        "description": "Source port index"
+      },
+      "toNode": {
+        "type": "number",
+        "description": "Destination node ID (for connect/disconnect)"
+      },
+      "toPort": {
+        "type": "number",
+        "description": "Destination port index"
+      },
+      "shaderId": {
+        "type": "number",
+        "description": "Shader resource ID (for multi-shader scenes)"
+      }
+    },
+    "required": [
+      "action"
+    ]
+  }
+}

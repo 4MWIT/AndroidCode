@@ -1,0 +1,30 @@
+{
+  "name": "manage_theme_resource",
+  "description": "Create/read/modify Theme .tres resources",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Godot project path"
+      },
+      "resourcePath": {
+        "type": "string",
+        "description": "Theme file path (relative to project)"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: create, read, modify"
+      },
+      "properties": {
+        "type": "object",
+        "description": "Theme properties to set"
+      }
+    },
+    "required": [
+      "projectPath",
+      "resourcePath",
+      "action"
+    ]
+  }
+}

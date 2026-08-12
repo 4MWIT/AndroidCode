@@ -1,0 +1,25 @@
+{
+  "name": "save_scene",
+  "description": "Save changes to a scene file",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Godot project path"
+      },
+      "scenePath": {
+        "type": "string",
+        "description": "Scene file path (relative to project)"
+      },
+      "newPath": {
+        "type": "string",
+        "description": "Optional: New path to save the scene to (for creating variants)"
+      }
+    },
+    "required": [
+      "projectPath",
+      "scenePath"
+    ]
+  }
+}

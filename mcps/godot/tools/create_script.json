@@ -1,0 +1,37 @@
+{
+  "name": "create_script",
+  "description": "Create a GDScript file from a template",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Godot project path"
+      },
+      "scriptPath": {
+        "type": "string",
+        "description": "Script file path (relative to project)"
+      },
+      "extends": {
+        "type": "string",
+        "description": "Base class to extend. Default: Node"
+      },
+      "className": {
+        "type": "string",
+        "description": "Optional class_name"
+      },
+      "methods": {
+        "type": "array",
+        "description": "Method stubs to include"
+      },
+      "source": {
+        "type": "string",
+        "description": "Full source code (overrides template)"
+      }
+    },
+    "required": [
+      "projectPath",
+      "scriptPath"
+    ]
+  }
+}

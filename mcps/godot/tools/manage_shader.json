@@ -1,0 +1,34 @@
+{
+  "name": "manage_shader",
+  "description": "Create or read .gdshader files",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Godot project path"
+      },
+      "shaderPath": {
+        "type": "string",
+        "description": "Shader file path (relative to project)"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: create or read"
+      },
+      "shaderType": {
+        "type": "string",
+        "description": "Type: spatial, canvas_item, particles, sky"
+      },
+      "source": {
+        "type": "string",
+        "description": "Shader source code (for create)"
+      }
+    },
+    "required": [
+      "projectPath",
+      "shaderPath",
+      "action"
+    ]
+  }
+}

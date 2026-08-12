@@ -1,0 +1,25 @@
+{
+  "name": "manage_plugins",
+  "description": "List/enable/disable editor plugins",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Godot project path"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: list, enable, disable"
+      },
+      "pluginName": {
+        "type": "string",
+        "description": "Plugin name"
+      }
+    },
+    "required": [
+      "projectPath",
+      "action"
+    ]
+  }
+}

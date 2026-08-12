@@ -1,0 +1,52 @@
+{
+  "name": "game_light_3d",
+  "description": "Create/configure 3D lights (directional/omni/spot)",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "parentPath": {
+        "type": "string",
+        "description": "Parent node path"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: create or configure"
+      },
+      "lightType": {
+        "type": "string",
+        "description": "Type: directional, omni, spot"
+      },
+      "nodePath": {
+        "type": "string",
+        "description": "Node path (for configure)"
+      },
+      "color": {
+        "type": "object",
+        "description": "Light color {r,g,b}"
+      },
+      "energy": {
+        "type": "number",
+        "description": "Light energy/intensity"
+      },
+      "range": {
+        "type": "number",
+        "description": "Light range (omni/spot)"
+      },
+      "shadows": {
+        "type": "boolean",
+        "description": "Enable shadow casting"
+      },
+      "spotAngle": {
+        "type": "number",
+        "description": "Spot cone angle in degrees"
+      },
+      "name": {
+        "type": "string",
+        "description": "Node name"
+      }
+    },
+    "required": [
+      "action"
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "game_audio_spatial",
+  "description": "Configure AudioStreamPlayer3D spatial properties",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to AudioStreamPlayer3D"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: configure, get_info"
+      },
+      "maxDistance": {
+        "type": "number",
+        "description": "Maximum audible distance"
+      },
+      "unitSize": {
+        "type": "number",
+        "description": "Unit size for distance attenuation"
+      },
+      "maxDb": {
+        "type": "number",
+        "description": "Maximum volume in dB"
+      },
+      "attenuationModel": {
+        "type": "string",
+        "description": "Model: inverse, inverse_square, logarithmic"
+      }
+    },
+    "required": [
+      "nodePath",
+      "action"
+    ]
+  }
+}

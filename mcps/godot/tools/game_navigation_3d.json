@@ -1,0 +1,40 @@
+{
+  "name": "game_navigation_3d",
+  "description": "Create/configure NavigationRegion3D and bake",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "parentPath": {
+        "type": "string",
+        "description": "Parent node path"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: create, bake, configure"
+      },
+      "nodePath": {
+        "type": "string",
+        "description": "Node path (for bake/configure)"
+      },
+      "cellSize": {
+        "type": "number",
+        "description": "Navigation cell size"
+      },
+      "agentRadius": {
+        "type": "number",
+        "description": "Agent radius"
+      },
+      "agentHeight": {
+        "type": "number",
+        "description": "Agent height"
+      },
+      "name": {
+        "type": "string",
+        "description": "Node name"
+      }
+    },
+    "required": [
+      "action"
+    ]
+  }
+}

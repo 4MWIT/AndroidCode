@@ -1,0 +1,36 @@
+{
+  "name": "game_path_2d",
+  "description": "Path2D/Curve2D management and AnimatedSprite2D",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "action": {
+        "type": "string",
+        "description": "Action: create, add_point, set_points, get_points"
+      },
+      "parentPath": {
+        "type": "string",
+        "description": "Parent node path (for create)"
+      },
+      "nodePath": {
+        "type": "string",
+        "description": "Path2D node path"
+      },
+      "points": {
+        "type": "array",
+        "description": "Array of points [{x,y},...]"
+      },
+      "point": {
+        "type": "object",
+        "description": "Single point {x,y}"
+      },
+      "name": {
+        "type": "string",
+        "description": "Node name"
+      }
+    },
+    "required": [
+      "action"
+    ]
+  }
+}

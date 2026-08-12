@@ -1,0 +1,31 @@
+{
+  "name": "attach_script",
+  "description": "Attach a GDScript to a scene node (headless)",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Godot project path"
+      },
+      "scenePath": {
+        "type": "string",
+        "description": "Scene file path (relative to project)"
+      },
+      "nodePath": {
+        "type": "string",
+        "description": "Path to the node within the scene (e.g., \"root/Player\")"
+      },
+      "scriptPath": {
+        "type": "string",
+        "description": "Path to the .gd script file (relative to project)"
+      }
+    },
+    "required": [
+      "projectPath",
+      "scenePath",
+      "nodePath",
+      "scriptPath"
+    ]
+  }
+}

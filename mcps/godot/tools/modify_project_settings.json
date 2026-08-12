@@ -1,0 +1,31 @@
+{
+  "name": "modify_project_settings",
+  "description": "Modify a project.godot setting",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Godot project path"
+      },
+      "section": {
+        "type": "string",
+        "description": "Section in project.godot (e.g., \"application\", \"display\", \"rendering\")"
+      },
+      "key": {
+        "type": "string",
+        "description": "Setting key (e.g., \"run/main_scene\", \"window/size/viewport_width\")"
+      },
+      "value": {
+        "type": "string",
+        "description": "Value to set (as a string, will be written as-is)"
+      }
+    },
+    "required": [
+      "projectPath",
+      "section",
+      "key",
+      "value"
+    ]
+  }
+}

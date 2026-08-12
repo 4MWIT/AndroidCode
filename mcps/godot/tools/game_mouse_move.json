@@ -1,0 +1,29 @@
+{
+  "name": "game_mouse_move",
+  "description": "Move the mouse in the running Godot game",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "x": {
+        "type": "number",
+        "description": "Absolute X position"
+      },
+      "y": {
+        "type": "number",
+        "description": "Absolute Y position"
+      },
+      "relative_x": {
+        "type": "number",
+        "description": "Relative X movement"
+      },
+      "relative_y": {
+        "type": "number",
+        "description": "Relative Y movement"
+      }
+    },
+    "required": [
+      "x",
+      "y"
+    ]
+  }
+}

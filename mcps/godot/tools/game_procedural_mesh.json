@@ -1,0 +1,37 @@
+{
+  "name": "game_procedural_mesh",
+  "description": "Generate meshes via ArrayMesh from vertex data",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "parentPath": {
+        "type": "string",
+        "description": "Parent node path"
+      },
+      "vertices": {
+        "type": "array",
+        "description": "Vertex positions [[x,y,z],...]"
+      },
+      "normals": {
+        "type": "array",
+        "description": "Vertex normals [[x,y,z],...]"
+      },
+      "uvs": {
+        "type": "array",
+        "description": "UV coordinates [[u,v],...]"
+      },
+      "indices": {
+        "type": "array",
+        "description": "Triangle indices [i0,i1,i2,...]"
+      },
+      "name": {
+        "type": "string",
+        "description": "Node name"
+      }
+    },
+    "required": [
+      "parentPath",
+      "vertices"
+    ]
+  }
+}

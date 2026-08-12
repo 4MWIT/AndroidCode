@@ -1,0 +1,26 @@
+{
+  "name": "game_world_settings",
+  "description": "Get/set gravity, physics FPS, and world settings",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "action": {
+        "type": "string",
+        "description": "Action: get or set. Default: get"
+      },
+      "gravity": {
+        "type": "number",
+        "description": "Gravity magnitude"
+      },
+      "gravityDirection": {
+        "type": "object",
+        "description": "Gravity direction vector {x,y,z}"
+      },
+      "physicsFps": {
+        "type": "number",
+        "description": "Physics ticks per second"
+      }
+    },
+    "required": []
+  }
+}

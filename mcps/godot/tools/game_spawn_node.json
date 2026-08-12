@@ -1,0 +1,28 @@
+{
+  "name": "game_spawn_node",
+  "description": "Create a new node of any type at runtime",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "type": {
+        "type": "string",
+        "description": "Node class name (e.g. \"Sprite2D\", \"CharacterBody3D\")"
+      },
+      "name": {
+        "type": "string",
+        "description": "Name for the new node. Default: auto-generated"
+      },
+      "parentPath": {
+        "type": "string",
+        "description": "Parent node path. Default: \"/root\""
+      },
+      "properties": {
+        "type": "object",
+        "description": "Properties to set on the new node"
+      }
+    },
+    "required": [
+      "type"
+    ]
+  }
+}

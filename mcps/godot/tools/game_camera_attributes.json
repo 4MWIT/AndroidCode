@@ -1,0 +1,38 @@
+{
+  "name": "game_camera_attributes",
+  "description": "Configure DOF, exposure, auto-exposure on camera",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "action": {
+        "type": "string",
+        "description": "Action: get or set"
+      },
+      "dofBlurFar": {
+        "type": "number",
+        "description": "DOF far blur distance"
+      },
+      "dofBlurNear": {
+        "type": "number",
+        "description": "DOF near blur distance"
+      },
+      "dofBlurAmount": {
+        "type": "number",
+        "description": "DOF blur amount"
+      },
+      "exposureMultiplier": {
+        "type": "number",
+        "description": "Exposure multiplier"
+      },
+      "autoExposure": {
+        "type": "boolean",
+        "description": "Enable auto exposure"
+      },
+      "autoExposureScale": {
+        "type": "number",
+        "description": "Auto exposure scale"
+      }
+    },
+    "required": []
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "game_audio_bus_layout",
+  "description": "Create/remove/reorder audio buses and routing",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "action": {
+        "type": "string",
+        "description": "Action: add, remove, move, set_send, list"
+      },
+      "busName": {
+        "type": "string",
+        "description": "Bus name"
+      },
+      "sendTo": {
+        "type": "string",
+        "description": "Send target bus name"
+      },
+      "index": {
+        "type": "number",
+        "description": "Target index (for move)"
+      }
+    },
+    "required": [
+      "action"
+    ]
+  }
+}

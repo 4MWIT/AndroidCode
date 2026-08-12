@@ -1,0 +1,39 @@
+{
+  "name": "game_mouse_drag",
+  "description": "Drag mouse between two points over N frames",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "fromX": {
+        "type": "number",
+        "description": "Start X coordinate"
+      },
+      "fromY": {
+        "type": "number",
+        "description": "Start Y coordinate"
+      },
+      "toX": {
+        "type": "number",
+        "description": "End X coordinate"
+      },
+      "toY": {
+        "type": "number",
+        "description": "End Y coordinate"
+      },
+      "button": {
+        "type": "number",
+        "description": "Mouse button (1=left). Default: 1"
+      },
+      "steps": {
+        "type": "number",
+        "description": "Number of frames for the drag. Default: 10"
+      }
+    },
+    "required": [
+      "fromX",
+      "fromY",
+      "toX",
+      "toY"
+    ]
+  }
+}

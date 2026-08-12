@@ -1,0 +1,29 @@
+{
+  "name": "game_script",
+  "description": "Attach, detach, or get source of node scripts",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to the node"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: attach, detach, get_source"
+      },
+      "source": {
+        "type": "string",
+        "description": "GDScript source code (for attach)"
+      },
+      "className": {
+        "type": "string",
+        "description": "Class the script extends"
+      }
+    },
+    "required": [
+      "nodePath",
+      "action"
+    ]
+  }
+}

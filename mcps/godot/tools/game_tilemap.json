@@ -1,0 +1,37 @@
+{
+  "name": "game_tilemap",
+  "description": "Get or set cells in a TileMapLayer node",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to TileMapLayer node"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: set_cells, get_cell, erase_cells, get_used_cells"
+      },
+      "x": {
+        "type": "number",
+        "description": "Cell X coordinate (for get_cell)"
+      },
+      "y": {
+        "type": "number",
+        "description": "Cell Y coordinate (for get_cell)"
+      },
+      "cells": {
+        "type": "array",
+        "description": "Array of cell objects for set_cells/erase_cells"
+      },
+      "sourceId": {
+        "type": "number",
+        "description": "Filter by source_id (for get_used_cells)"
+      }
+    },
+    "required": [
+      "nodePath",
+      "action"
+    ]
+  }
+}

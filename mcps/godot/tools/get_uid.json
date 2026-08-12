@@ -1,0 +1,21 @@
+{
+  "name": "get_uid",
+  "description": "Get the UID for a specific file in a Godot project (for Godot 4.4+)",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "projectPath": {
+        "type": "string",
+        "description": "Godot project path"
+      },
+      "filePath": {
+        "type": "string",
+        "description": "Path to the file (relative to project) for which to get the UID"
+      }
+    },
+    "required": [
+      "projectPath",
+      "filePath"
+    ]
+  }
+}

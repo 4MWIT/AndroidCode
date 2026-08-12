@@ -1,0 +1,9 @@
+{
+  "name": "game_get_errors",
+  "description": "Get new push_error/push_warning messages since last call",
+  "inputSchema": {
+    "type": "object",
+    "properties": {},
+    "required": []
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "game_ui_text",
+  "description": "LineEdit/TextEdit/RichTextLabel text operations",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to text control"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: get, set, append, clear, select, bbcode"
+      },
+      "text": {
+        "type": "string",
+        "description": "Text content"
+      },
+      "caretPosition": {
+        "type": "number",
+        "description": "Caret column position"
+      },
+      "selectionFrom": {
+        "type": "number",
+        "description": "Selection start"
+      },
+      "selectionTo": {
+        "type": "number",
+        "description": "Selection end"
+      }
+    },
+    "required": [
+      "nodePath",
+      "action"
+    ]
+  }
+}

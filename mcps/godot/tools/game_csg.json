@@ -1,0 +1,52 @@
+{
+  "name": "game_csg",
+  "description": "Create/configure CSG nodes with boolean operations",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "parentPath": {
+        "type": "string",
+        "description": "Parent node path"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: create or configure"
+      },
+      "csgType": {
+        "type": "string",
+        "description": "CSG type: box, sphere, cylinder, mesh, combiner"
+      },
+      "nodePath": {
+        "type": "string",
+        "description": "Node path (for configure)"
+      },
+      "operation": {
+        "type": "string",
+        "description": "Boolean op: union, intersection, subtraction"
+      },
+      "size": {
+        "type": "object",
+        "description": "Size {x,y,z} (box)"
+      },
+      "radius": {
+        "type": "number",
+        "description": "Radius (sphere/cylinder)"
+      },
+      "height": {
+        "type": "number",
+        "description": "Height (cylinder)"
+      },
+      "material": {
+        "type": "string",
+        "description": "Material resource path"
+      },
+      "name": {
+        "type": "string",
+        "description": "Node name"
+      }
+    },
+    "required": [
+      "action"
+    ]
+  }
+}

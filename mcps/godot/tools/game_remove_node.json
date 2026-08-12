@@ -1,0 +1,16 @@
+{
+  "name": "game_remove_node",
+  "description": "Remove and free a node from the running game's scene tree",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to the node to remove"
+      }
+    },
+    "required": [
+      "nodePath"
+    ]
+  }
+}

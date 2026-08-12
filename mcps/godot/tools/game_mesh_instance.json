@@ -1,0 +1,41 @@
+{
+  "name": "game_mesh_instance",
+  "description": "Create MeshInstance3D with primitive meshes",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "parentPath": {
+        "type": "string",
+        "description": "Parent node path"
+      },
+      "meshType": {
+        "type": "string",
+        "description": "Mesh: box, sphere, cylinder, capsule, plane, quad"
+      },
+      "size": {
+        "type": "object",
+        "description": "Mesh size {x,y,z}"
+      },
+      "radius": {
+        "type": "number",
+        "description": "Mesh radius"
+      },
+      "height": {
+        "type": "number",
+        "description": "Mesh height"
+      },
+      "material": {
+        "type": "string",
+        "description": "Material resource path or color hex"
+      },
+      "name": {
+        "type": "string",
+        "description": "Node name"
+      }
+    },
+    "required": [
+      "parentPath",
+      "meshType"
+    ]
+  }
+}

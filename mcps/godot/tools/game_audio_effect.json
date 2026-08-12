@@ -1,0 +1,32 @@
+{
+  "name": "game_audio_effect",
+  "description": "Add/remove/configure audio bus effects",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "busName": {
+        "type": "string",
+        "description": "Audio bus name. Default: Master"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: add, remove, configure, list"
+      },
+      "effectType": {
+        "type": "string",
+        "description": "Effect: reverb, delay, chorus, eq, compressor, limiter"
+      },
+      "index": {
+        "type": "number",
+        "description": "Effect index"
+      },
+      "properties": {
+        "type": "object",
+        "description": "Effect properties to set"
+      }
+    },
+    "required": [
+      "action"
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "game_add_collision",
+  "description": "Add a collision shape to a physics body node",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "parentPath": {
+        "type": "string",
+        "description": "Path to CollisionBody/Area node"
+      },
+      "shapeType": {
+        "type": "string",
+        "description": "Shape: box, sphere/circle, capsule, cylinder, ray, segment"
+      },
+      "shapeParams": {
+        "type": "object",
+        "description": "Shape dimensions (e.g. {radius, height})"
+      },
+      "collisionLayer": {
+        "type": "number",
+        "description": "Collision layer bitmask"
+      },
+      "collisionMask": {
+        "type": "number",
+        "description": "Collision mask bitmask"
+      },
+      "disabled": {
+        "type": "boolean",
+        "description": "Start disabled"
+      }
+    },
+    "required": [
+      "parentPath",
+      "shapeType"
+    ]
+  }
+}

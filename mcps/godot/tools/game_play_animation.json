@@ -1,0 +1,24 @@
+{
+  "name": "game_play_animation",
+  "description": "Control an AnimationPlayer node: play, stop, pause, or list animations",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to the AnimationPlayer node"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: \"play\", \"stop\", \"pause\", or \"get_list\""
+      },
+      "animation": {
+        "type": "string",
+        "description": "Animation name (required for \"play\" action)"
+      }
+    },
+    "required": [
+      "nodePath"
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "game_gridmap",
+  "description": "GridMap set/get/clear cells and query used cells",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to GridMap node"
+      },
+      "action": {
+        "type": "string",
+        "description": "Action: set_cell, get_cell, clear, get_used"
+      },
+      "x": {
+        "type": "number",
+        "description": "Cell X coordinate"
+      },
+      "y": {
+        "type": "number",
+        "description": "Cell Y coordinate"
+      },
+      "z": {
+        "type": "number",
+        "description": "Cell Z coordinate"
+      },
+      "item": {
+        "type": "number",
+        "description": "MeshLibrary item index"
+      },
+      "orientation": {
+        "type": "number",
+        "description": "Cell orientation index"
+      }
+    },
+    "required": [
+      "nodePath",
+      "action"
+    ]
+  }
+}

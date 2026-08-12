@@ -1,0 +1,25 @@
+{
+  "name": "game_emit_signal",
+  "description": "Emit a signal on a node in the running game, optionally with arguments",
+  "inputSchema": {
+    "type": "object",
+    "properties": {
+      "nodePath": {
+        "type": "string",
+        "description": "Path to the node"
+      },
+      "signalName": {
+        "type": "string",
+        "description": "Name of the signal to emit"
+      },
+      "args": {
+        "type": "array",
+        "description": "Optional arguments to pass with the signal"
+      }
+    },
+    "required": [
+      "nodePath",
+      "signalName"
+    ]
+  }
+}
